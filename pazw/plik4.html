@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="jq.js"></script>
+<script>
+$(document).ready(function(){
+
+    var koza = jQuery.noConflict();//po tej linicje $ nie będzie dzialas, trzeba pisa jQuery, pisząc var samemu mozemy alias ustawić
+    //koza("h1").css("border","2px dotted #00ff00");    //zamiast jQuery mozna napisać $
+   // koza("<h2>Kolejny element</h2>").appendTo("body");
+
+//koza("*").css("border","2px dotted red");
+//koza(".tekst").css("border","2px dotted red");
+koza("#abc").css("border","2px dotted red");
+
+
+
+}); 
+
+
+    
+
+</script>
+
+
+
+</head>
+<body>
+    <h1>Przykladowy text</h1>
+    <div id="otoczka">
+        <h1>Tytuł strony</h1>
+    
+        <p class="tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    
+        <div id="abc">
+    
+            <p class="gruby">Gruby tekst w elemencie DIV</p>
+    
+        </div>
+    
+        <p class="tekst gruby">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p class="tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    
+    </div>
+    
+</body>
+</html>
